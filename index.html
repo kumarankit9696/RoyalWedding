@@ -405,7 +405,7 @@ body::after{
   </div>
 
   <div class="fade-up" style="position:relative;z-index:3;">
-    <div class="hero-date-pill">💍 29 · June · 2026 💍</div>
+    <div class="hero-date-pill">💍 01 · July · 2026 💍</div>
   </div>
 </section>
 <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.25),rgba(150,80,255,.2),rgba(212,160,23,.25),transparent);"></div>
@@ -487,7 +487,7 @@ body::after{
   </div>
 
   <div class="fade-up">
-    <div class="wedding-date-badge">💍 29 June 2026 💍</div>
+    <div class="wedding-date-badge">💍 01 July 2026 💍</div>
   </div>
 </section>
 
@@ -644,7 +644,7 @@ document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
 
 // ── Countdown ──
 function tick(){
-  const diff=new Date('2026-06-29T00:00:00')-new Date();
+  const diff=new Date('2026-07-01T00:00:00')-new Date();
   if(diff<=0){['cd-d','cd-h','cd-m','cd-s'].forEach(id=>document.getElementById(id).textContent='🎉');return;}
   document.getElementById('cd-d').textContent=String(~~(diff/86400000)).padStart(2,'0');
   document.getElementById('cd-h').textContent=String(~~(diff%86400000/3600000)).padStart(2,'0');
